@@ -1,0 +1,1 @@
+<?php require_once __DIR__ . '/../../api/spotify_auth_callback.php'; ?>

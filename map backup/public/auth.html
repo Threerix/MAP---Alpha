@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAP - Entrar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css?v=reset" />
+</head>
+<body>
+  <div class="lava-bg" aria-hidden="true">
+    <div class="layer back"><div class="gooey"><span class="blob" style="--x:8vw;--s:1.06;--t:29s;--sw:10s;--amp:1.4vw;--b:12px;animation-delay:-3s;"></span><span class="blob" style="--x:41vw;--s:.98;--t:31s;--sw:11.5s;--amp:1.0vw;--b:10px;animation-delay:-12s;"></span><span class="blob" style="--x:57vw;--s:1.14;--t:27s;--sw:9s;--amp:.9vw;--b:11px;animation-delay:-7s;"></span><span class="blob" style="--x:88vw;--s:1.02;--t:30s;--sw:10.5s;--amp:1.6vw;--b:9px;animation-delay:-16s;"></span><span class="blob" style="--x:22vw;--s:.94;--t:33s;--sw:12s;--amp:1.2vw;--b:10px;animation-delay:-20s;"></span><span class="blob" style="--x:72vw;--s:1.18;--t:28s;--sw:8.5s;--amp:.8vw;--b:12px;animation-delay:-9s;"></span></div></div>
+    <div class="glow"><span class="wave"></span></div>
+  </div>
+
+  <div class="auth-container">
+    <header>
+      <h1 class="animated-title"><span class="letter">M</span><span class="letter">A</span><span class="letter">P</span></h1>
+      <p class="subtitle">Find your vibe</p>
+    </header>
+
+    <div class="auth-content">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="login">Entrar</button>
+        <button class="tab-btn" data-tab="register">Criar Conta</button>
+      </div>
+
+      <form class="auth-form active" id="loginForm">
+        <div class="form-group"><label for="username">Username</label><input id="username" placeholder="Digite seu usuário ou email" required /><span class="error-message" id="loginUsernameError"></span></div>
+        <div class="form-group"><label for="password">Senha</label><input id="password" type="password" placeholder="Digite sua senha" required /><span class="error-message" id="loginPasswordError"></span></div>
+        <button class="submit-btn" id="loginSubmit"><span>Entrar</span></button>
+        <a class="forgot-password-link" href="#">Esqueceu sua senha?</a>
+      </form>
+
+      <form class="auth-form" id="registerForm">
+        <div class="form-group"><label for="registerUsername">Nome de Usuário</label><input id="registerUsername" placeholder="Escolha um nome de usuário" required /><span class="error-message" id="registerUsernameError"></span></div>
+        <div class="form-group"><label for="registerEmail">Email</label><input id="registerEmail" type="email" placeholder="Digite seu email" required /><span class="error-message" id="registerEmailError"></span></div>
+        <div class="form-group">
+          <label for="registerPassword">Senha</label>
+          <input id="registerPassword" type="password" placeholder="Crie uma senha forte" required />
+          <div class="password-requirements">
+            <div class="requirement" id="req-length"><span class="requirement-icon">○</span><span>Pelo menos 6 caracteres</span></div>
+            <div class="requirement" id="req-letter"><span class="requirement-icon">○</span><span>Pelo menos uma letra</span></div>
+            <div class="requirement" id="req-number"><span class="requirement-icon">○</span><span>Pelo menos um número</span></div>
+          </div>
+          <span class="error-message" id="registerPasswordError"></span>
+        </div>
+        <div class="form-group"><label for="confirmPassword">Confirmar Senha</label><input id="confirmPassword" type="password" placeholder="Digite a senha novamente" required /><span class="error-message" id="confirmPasswordError"></span></div>
+        <button class="submit-btn" id="registerSubmit"><span>Criar Minha Conta</span></button>
+      </form>
+    </div>
+
+    <div class="version-tag">v0.6</div>
+  </div>
+
+  <div class="loading-overlay" id="loadingOverlay"><div class="loading-spinner"></div></div>
+  <script src="js/auth.js" defer></script>
+</body>
+</html>
