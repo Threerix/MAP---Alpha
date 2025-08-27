@@ -27,16 +27,17 @@ ini_set('display_errors', '1');
 
 /** Last.fm API key */
 if (!defined('LASTFM_API_KEY')) {
-    define('LASTFM_API_KEY', 'b2d58b0e61e4311a9641bee6348d09e9');
+    define('LASTFM_API_KEY', '');
 }
 
 // Spotify API Keys (Suas chaves foram mantidas)
 if (!defined('SPOTIFY_CLIENT_ID')) {
-    define('SPOTIFY_CLIENT_ID', 'c2b18e6abaa348fba6ba468701982aa1');
+    define('SPOTIFY_CLIENT_ID', '');
 }
 if (!defined('SPOTIFY_CLIENT_SECRET')) {
-    define('SPOTIFY_CLIENT_SECRET', 'ea7ba8bc377e4c69b3a8e4a85a2368cf');
+    define('SPOTIFY_CLIENT_SECRET', '');
 }
 if (!defined('SPOTIFY_REDIRECT_URI')) {
-    define('SPOTIFY_REDIRECT_URI', 'http://127.0.0.1:80/map/public/api/spotify_auth_callback.php');
+    define('SPOTIFY_REDIRECT_URI', '');
+
 }
