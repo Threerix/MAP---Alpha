@@ -1,0 +1,4 @@
+This was a good one tho... I am a beginner on backend(can consider myself a beginner on everything else too, we are always learning), so working with database and backend was a bit rough for me a first, with commands on SQL, persistent data, xampp and everything...
+But it was so good to actually se it creating a form, something I thought it would take months to achieve. Fistly let me say, backend was so verbose for me at first compared to front and I had almost to no experience with real studies when I started working on this.
+So I used AI to help me code, understand and actually to give me a underdog to start swinging by myself. I am extremely proud to be able to do this, cause some months ago life was a bit too rough and I almost dropped out of my college and almost gave up on learning this.
+But here we are, maybe rn I can say that I'm slow climbing the stairs, and this step was a great one. If you have something to say or aggregate on this, hit me up!
